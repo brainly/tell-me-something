@@ -1,6 +1,10 @@
 const button = document.querySelector('button');
 const progress = document.querySelector('.progress');
-const all = [1,2,3,4];
+const all = [];
+for(var i=1; i<=23; i++) {
+    all.push(i);
+}
+
 let playlist = [];
 
 button.addEventListener('click', playMeASong);

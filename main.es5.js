@@ -2,7 +2,11 @@
 
 var button = document.querySelector('button');
 var progress = document.querySelector('.progress');
-var all = [1, 2, 3, 4];
+var all = [];
+for (var i = 1; i <= 23; i++) {
+    all.push(i);
+}
+
 var playlist = [];
 
 button.addEventListener('click', playMeASong);
