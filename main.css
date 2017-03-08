@@ -24,11 +24,11 @@ body {
 button {
     position: relative;
 
-    color: white;
+    color: #ff796b;
     font-size: 24px;
     font-family: 'ProximaNova', sans-serif;
 
-    background-color: #fec83c;
+    background-color: white;
 
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
 
@@ -39,9 +39,11 @@ button {
 
     outline: none;
 
-    transition: transform 0.15s ease-out;
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
 
     overflow: hidden;
+
+    cursor: pointer;
 }
 
 button:not([disabled]):active {
