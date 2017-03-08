@@ -2,12 +2,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family:"ProximaNova";
+    src: url("https://styleguide.brainly.com/fonts/ProximaNova-Regular-531916d292.woff2") format("woff2"), url("https://styleguide.brainly.com/fonts/ProximaNova-Regular-a72b86f506.woff") format("woff");
+    font-weight: 400;
+    font-style:normal
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: #E91E63;
+    background-color: #ff796b;
 
     height: 100vh;
     padding: 10px;
@@ -19,36 +26,38 @@ button {
 
     color: white;
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'ProximaNova', sans-serif;
 
-    background-color: #00bcd4;
-    background-image: linear-gradient(#00bcd4, #51b7e6);
+    background-color: #fec83c;
 
-    box-shadow: 0 1px 1px #9e9e9e;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
 
     padding: 14px 24px;
 
     border: none;
-    border-radius: 2px;
+    border-radius: 9px;
 
     outline: none;
 
     transition: transform 0.15s ease-out;
+
+    overflow: hidden;
 }
 
 button:not([disabled]):active {
-    transform: scale(0.98);
+    transform: scale(0.985);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
 }
 
 .progress {
-    background-color: #673ab7;
+    background-color: #57b2f8;
     height: 3px;
     bottom: 0;
     left: 0;
     width: 0;
     position: absolute;
     z-index: 1;
-    border-radius: 0 0 2px 2px;
+    border-radius: 0 0 9px 9px;
     opacity: 0;
     transition: width 0.5s, opacity 0.3s;
 }
